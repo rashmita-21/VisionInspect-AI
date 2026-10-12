@@ -1,0 +1,9 @@
+[tool.pyrefly]
+project-includes = ["backend/**/*.py"]
+search_path = [".", "backend"]
+python-version = "3.12"
+preset = "default"
+
+[tool.pyright]
+include = ["backend"]
+extraPaths = [".", "backend"]

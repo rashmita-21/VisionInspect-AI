@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+build/
+coverage/
+
+# Environment variables & secrets
+.env*
+!.env.example
+
+# Python & ML artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
+env/
+
+# SQLite & Uploads / Artifacts
+visioninspect.db
+visioninspect.db-journal
+backend/data/*.db
+backend/data/*.db-journal
+backend/data/mvtec_ad/
+backend/artifacts/inspections/
+backend/artifacts/heatmaps/
+backend/artifacts/models/*.pt
+backend/models/
+backend/data/*.tar.xz
+backend/data/*.tar.gz
+backend/data/archives/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Additional local database and evaluation artifacts
+*.sqlite
+*.sqlite3
+*.db-journal
+backend/artifacts/evaluation/
+
+# Temporary model checkpoints
+temp_test_ckpt.pt
